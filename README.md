@@ -1,3 +1,3 @@
 # Gilbert Ronaldo's Dotfiles
 
-This is my personal dotfiles. I actively using Archlinux.
+This is my personal dotfiles. I'm actively using Archlinux.
