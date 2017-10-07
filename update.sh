@@ -3,6 +3,7 @@
 rsync -vrmz $HOME/.config/nvim config/
 rsync -vrmz $HOME/.config/i3 config/
 rsync -vmrz $HOME/.config/polybar config/
+rsync -vmrc $HOME/.config/termite config/
 
 git add -Av
 read -p "Commit Description: " desc
