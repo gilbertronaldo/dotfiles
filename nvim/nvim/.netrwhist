@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/aldo/go/src'
+let g:netrw_dirhist_2='/home/aldo/go/src/github.com'
+let g:netrw_dirhist_3='/home/aldo/go/src/github.com/gilbertronaldo'
+let g:netrw_dirhist_4='/home/aldo/go/src/github.com/gilbertronaldo/latihan'
+let g:netrw_dirhist_5='/home/aldo/.config/nvim'
+let g:netrw_dirhist_6='/home/aldo/.config/nvim/autoload'
+let g:netrw_dirhist_7='/home/aldo/.config/nvim'
