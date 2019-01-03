@@ -1,5 +1,6 @@
-# Gilbert Ronaldo's Dotfiles
+# ~/.dotfiles
 
-This is my personal dotfiles. I'm actively using Archlinux.
+This is my personal dotfiles. 
+I'm actively using Archlinux.
 
 ![alt text](https://raw.githubusercontent.com/gilbertronaldo/dotfiles/master/screenshot.png)
