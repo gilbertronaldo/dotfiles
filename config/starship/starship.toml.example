@@ -1,0 +1,5 @@
+# Starship preset untuk Zenbook
+# Kosong = pakai default starship (sudah bagus).
+# Kalau mau custom, isi file ini lalu install.sh akan symlink ke ~/.config/starship.toml
+# Contoh minimal:
+# format = "$directory$git_branch$git_status$character"
