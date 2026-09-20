@@ -14,7 +14,7 @@ Isi:
 ## Cara pakai di laptop baru
 
 ```bash
-git clone <repo-url> ~/dotfiles
+git clone https://github.com/gilbertronaldo/zenbook-dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./scripts/packages.sh   # install paket yang dibutuhkan (review dulu isinya)
 ./scripts/install.sh    # symlink config ke $HOME (backup otomatis .bak)
