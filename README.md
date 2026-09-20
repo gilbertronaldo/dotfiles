@@ -21,6 +21,8 @@ every day, tuned to stay fast, quiet, and boring (in a good way).
 One OS, two beasts: the Zenbook for anywhere-computing with a 10-hour
 battery, the 12900K + 4090 for when subtlety is optional.
 
+![fedora fastfetch](assets/fedora_review_fastfetch.png)
+
 ## What's inside
 
 ```
