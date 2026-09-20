@@ -3,24 +3,33 @@
 Setup harian ASUS Zenbook 14 OLED (UM3406KA) — Ryzen AI 7 350 / Radeon 860M / Fedora 44.
 Prinsip: minimal, no-bloat, gampang di-clone ke laptop baru.
 
-Isi:
-- `bash/` — `.bashrc`, `.bash_profile` (BASH + starship + atuin)
-- `starship/` — preset starship (opsional, default bawaan kalau kosong)
-- `atuin/` — template config atuin (tanpa key/history, itu private)
-- `pipewire/pipewire.conf.d/` — EQ speaker Zenbook (ALC294 + CS35L41)
-- `hushmic/` — config mic noise suppression
-- `scripts/` — `install.sh` (symlink aman) + `packages.sh` (daftar paket Fedora)
+```
+.
+├── assets/      # screenshot, foto, file statis (bebas)
+├── config/      # semua dotfiles
+│   ├── atuin/       # template config atuin (tanpa key/history, private)
+│   ├── bash/        # .bashrc, .bash_profile (BASH + starship + atuin)
+│   ├── hushmic/     # config mic noise suppression
+│   ├── pipewire/    # EQ speaker Zenbook (ALC294 + CS35L41)
+│   └── starship/    # preset starship (opsional)
+├── docs/        # catatan setup (tambahin sesuai kebutuhan)
+├── scripts/
+│   ├── install.sh   # symlink config ke $HOME (backup otomatis .bak)
+│   └── packages.sh  # daftar paket Fedora
+└── README.md
+```
 
 ## Cara pakai di laptop baru
 
 ```bash
-git clone https://github.com/gilbertronaldo/zenbook-dotfiles.git ~/dotfiles
-cd ~/dotfiles
+git clone https://github.com/gilbertronaldo/zenbook-dotfiles.git ~/src/gilbertronaldo/dotfiles
+cd ~/src/gilbertronaldo/dotfiles
 ./scripts/packages.sh   # install paket yang dibutuhkan (review dulu isinya)
 ./scripts/install.sh    # symlink config ke $HOME (backup otomatis .bak)
 ```
 
 Setelah itu:
+
 ```bash
 systemctl --user restart pipewire
 # login ulang / restart shell biar starship + atuin ke-load

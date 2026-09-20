@@ -21,21 +21,21 @@ link() {
 }
 
 echo "== Zenbook dotfiles install =="
-link "$DOTFILES_DIR/bash/.bashrc"        "$HOME/.bashrc"
-link "$DOTFILES_DIR/bash/.bash_profile"  "$HOME/.bash_profile"
-link "$DOTFILES_DIR/pipewire/pipewire.conf.d/zenbook-speaker-eq.conf" \
+link "$DOTFILES_DIR/config/bash/.bashrc"        "$HOME/.bashrc"
+link "$DOTFILES_DIR/config/bash/.bash_profile"  "$HOME/.bash_profile"
+link "$DOTFILES_DIR/config/pipewire/pipewire.conf.d/zenbook-speaker-eq.conf" \
      "$HOME/.config/pipewire/pipewire.conf.d/zenbook-speaker-eq.conf"
-link "$DOTFILES_DIR/hushmic/config.toml" "$HOME/.config/hushmic/config.toml"
+link "$DOTFILES_DIR/config/hushmic/config.toml" "$HOME/.config/hushmic/config.toml"
 
 # starship: hanya symlink kalau user sudah punya starship.toml beneran
-if [[ -f "$DOTFILES_DIR/starship/starship.toml" ]]; then
-  link "$DOTFILES_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
+if [[ -f "$DOTFILES_DIR/config/starship/starship.toml" ]]; then
+  link "$DOTFILES_DIR/config/starship/starship.toml" "$HOME/.config/starship.toml"
 else
-  echo "SKIP starship.toml (pakai default bawaan; contoh di starship/starship.toml.example)"
+  echo "SKIP starship.toml (pakai default bawaan; contoh di config/starship/starship.toml.example)"
 fi
 
 echo
 echo "Atuin: config TIDAK di-symlink otomatis (berisi key/sync private)."
-echo "  Lihat atuin/config.toml.example sebagai referensi."
+echo "  Lihat config/atuin/config.toml.example sebagai referensi."
 echo
 echo "Selesai. Jalankan: systemctl --user restart pipewire"
