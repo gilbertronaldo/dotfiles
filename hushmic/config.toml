@@ -1,0 +1,5 @@
+enabled = true
+model = "dpdfnet8_48khz_hr"
+attn_limit = 100.0
+set_default = true
+autostart = true
